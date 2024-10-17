@@ -29,8 +29,8 @@ async function handleChangePage(e: any) {
       class="p-3 md:p-6 my-5 border border-slate-900 rounded-xl bg-gradient-to-tr from-[#CBAA61]/20 via-slate-900 to-[#CBAA61]/20 text-slate-100">
       <div class="mb-2 font-bold text-xl md:text-2xl">Waitlist</div>
       <div v-if="true">
-        <template v-for="item in controller.results.data" :key="item.id">
-          <WaitlistItem :item="item" />
+        <template v-for="(item,index) in controller.results.data" :key="item.id">
+          <WaitlistItem :item="item" :number="index" />
         </template>
       </div>
       <div v-else class="bg-slate-800/10 flex items-center justify-center flex-col border-dashed p-4 rounded-xl">
