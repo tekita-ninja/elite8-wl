@@ -1,8 +1,6 @@
 <script setup lang="ts">
-import type { TWaitlistItem } from '@/types/waitlist';
 import VPagination from "@hennge/vue3-pagination";
 import "@hennge/vue3-pagination/dist/vue3-pagination.css";
-const data = ref<TWaitlistItem[]>([]);
 onMounted(() => initialData())
 
 const controller = useWaitlistStore()
@@ -15,7 +13,7 @@ async function initialData() {
 
 }
 
-async function handleChangePage(e: any) {
+async function handleChangePage(e: number) {
   await controller.get({
     rowsPerPage: 10,
     page: e
@@ -38,9 +36,13 @@ async function handleChangePage(e: any) {
         <p class="text-sm">No Waitlist</p>
       </div>
     </div>
-    <div v-if="controller.results.meta && controller.results.meta?.lastPage > 1" class="pagination-container flex items-center justify-center">
+    <div v-if="controller.results.meta && controller.results.meta?.lastPage > 1"
+      class="pagination-container flex items-center justify-center mb-3">
       <v-pagination hideFirstButton hideLastButton v-model="controller.results.meta.currentPage"
         :pages="controller.results.meta?.lastPage" @update:model-value="handleChangePage" />
+    </div>
+    <div class="mb-4 pb-1">
+      <Announcement />
     </div>
   </div>
 </template>
