@@ -22,12 +22,36 @@ async function handleChangePage(e: number) {
 </script>
 
 <template>
-  <div>
+  <div class="pb-16">
     <div
       class="p-3 md:p-6 my-5 border border-slate-900 rounded-xl bg-gradient-to-tr from-[#CBAA61]/20 via-slate-900 to-[#CBAA61]/20 text-slate-100">
-      <div class="mb-2 font-bold text-xl md:text-2xl">Waitlist</div>
-      <div v-if="true">
+      <div class="mb-2 flex justify-between items-center">
+        <div class="font-bold text-xl md:text-2xl">Waitlist</div>
+        <button @click="initialData" class="h-8 w-8 border flex items-center justify-center rounded-md bg-white text-slate-900">
+          <Icon name="lineicons:reload" :class="[
+            controller.loading ? 'animate-spin':''
+          ]" />
+        </button>
+      </div>
+      <div v-if="!controller.loading">
         <template v-for="(item,index) in controller.results.data" :key="item.id">
+          <WaitlistItem :item="item" :number="index" />
+          <WaitlistItem :item="item" :number="index" />
+          <WaitlistItem :item="item" :number="index" />
+          <WaitlistItem :item="item" :number="index" />
+          <WaitlistItem :item="item" :number="index" />
+          <WaitlistItem :item="item" :number="index" />
+          <WaitlistItem :item="item" :number="index" />
+          <WaitlistItem :item="item" :number="index" />
+          <WaitlistItem :item="item" :number="index" />
+          <WaitlistItem :item="item" :number="index" />
+          <WaitlistItem :item="item" :number="index" />
+          <WaitlistItem :item="item" :number="index" />
+          <WaitlistItem :item="item" :number="index" />
+          <WaitlistItem :item="item" :number="index" />
+          <WaitlistItem :item="item" :number="index" />
+          <WaitlistItem :item="item" :number="index" />
+          <WaitlistItem :item="item" :number="index" />
           <WaitlistItem :item="item" :number="index" />
         </template>
       </div>

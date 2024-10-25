@@ -13,8 +13,8 @@ defineProps<{
       {{ number + 1 }}
     </div>
     <div class="flex-1">
-      <div class="font-bold text-sm">{{ item.customer.name }}</div>
-      <div class="text-sm">{{ subStringText(item.customer.phone) }}</div>
+      <div class="font-bold text-sm">{{ item.name }}</div>
+      <div class="text-sm">{{ subStringText(item.phoneNumber) }}</div>
     </div>
   </div>
 </template>

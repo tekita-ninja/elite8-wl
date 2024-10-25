@@ -10,7 +10,8 @@ export type TCustomerItem = {
 
 export type TWaitlistItem = {
   id: string
-  customerId: string
+  name: string
+  phoneNumber:string
   queueNumber: number
   numOfCall: number
   status: string
