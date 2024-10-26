@@ -36,23 +36,6 @@ async function handleChangePage(e: number) {
       <div v-if="!controller.loading">
         <template v-for="(item,index) in controller.results.data" :key="item.id">
           <WaitlistItem :item="item" :number="index" />
-          <WaitlistItem :item="item" :number="index" />
-          <WaitlistItem :item="item" :number="index" />
-          <WaitlistItem :item="item" :number="index" />
-          <WaitlistItem :item="item" :number="index" />
-          <WaitlistItem :item="item" :number="index" />
-          <WaitlistItem :item="item" :number="index" />
-          <WaitlistItem :item="item" :number="index" />
-          <WaitlistItem :item="item" :number="index" />
-          <WaitlistItem :item="item" :number="index" />
-          <WaitlistItem :item="item" :number="index" />
-          <WaitlistItem :item="item" :number="index" />
-          <WaitlistItem :item="item" :number="index" />
-          <WaitlistItem :item="item" :number="index" />
-          <WaitlistItem :item="item" :number="index" />
-          <WaitlistItem :item="item" :number="index" />
-          <WaitlistItem :item="item" :number="index" />
-          <WaitlistItem :item="item" :number="index" />
         </template>
       </div>
       <div v-else class="bg-slate-800/10 flex items-center justify-center flex-col border-dashed p-4 rounded-xl">
