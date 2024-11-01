@@ -19,3 +19,7 @@ export type TWaitlistItem = {
   updatedAt: string
   customer: TCustomerItem
 }
+export type TBanner = {
+  id: string
+  filename: string
+}
