@@ -72,5 +72,5 @@ export default defineNuxtConfig({
     },
   },
   ssr:false,
-  modules: ['@nuxtjs/tailwindcss', '@pinia/nuxt', '@nuxt/icon']
+  modules: ['@nuxtjs/tailwindcss', '@pinia/nuxt', '@nuxt/icon','nuxt-swiper']
 })

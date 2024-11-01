@@ -1,5 +1,5 @@
 <template>
-  <div class="my-8">
+  <div class="mb-8 mt-4">
     <div class="space-y-4">
       <a href="https://drive.google.com/file/d/1G1liYRijRjM_1rj_l4WUsP8KW-xWvaXG/view?usp=drivesdk" target="_blank"
         rel="noopener noreferrer"
@@ -13,5 +13,6 @@
         <p class="text-lg font-semibold">WAITLIST</p>
       </NuxtLink>
     </div>
+    <Banner />
   </div>
 </template>
