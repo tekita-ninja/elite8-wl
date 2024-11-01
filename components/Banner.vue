@@ -4,6 +4,7 @@ await controller.getBanner()
 </script>
 <template>
   <div
+  v-if="controller.banners.length > 0"
     class="mt-4 border overflow-hidden aspect-auto backdrop-blur border-slate-900 rounded-xl shadow shadow-[#CBAA61] bg-gradient-to-tr from-[#CBAA61]/20 via-slate-950/90 to-[#CBAA61]/50 text-slate-100">
     <Swiper class="h-full w-full" :speed="1000" :modules="[SwiperAutoplay, SwiperPagination]" :pagination="{
   clickable: true,
