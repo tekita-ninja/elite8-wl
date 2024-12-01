@@ -18,6 +18,7 @@ export type TWaitlistItem = {
   createdAt: string
   updatedAt: string
   customer: TCustomerItem
+  numOfPax: number
 }
 export type TBanner = {
   id: string
