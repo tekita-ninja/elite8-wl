@@ -7,5 +7,8 @@
     <p class="text-[12px]">
       Jika telah dipanggil melalui telpon/WA lebih dari 3x maka akan diskip ke player selanjutnya!
     </p>
+    <p class="text-[12px] mt-4">
+      Player yang sudah di lokasi akan diprioritaskan.
+    </p>
   </div>
 </template>

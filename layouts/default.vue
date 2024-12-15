@@ -14,5 +14,8 @@
         <Icon class="h-8 w-8" name="skill-icons:instagram" />
       </a>
     </div>
+    <div class="fixed bottom-0 backdrop-blur py-2 text-center left-0 right-0">
+      <p class="text-xs font-semibold">Powered by Tekita.tech</p>
+    </div>
   </div>
 </template>
