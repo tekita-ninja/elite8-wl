@@ -1,14 +1,27 @@
-<script setup lang="ts">
-
-</script>
+<script setup lang="ts"></script>
 <template>
-  <div class="bg-slate-800/50 p-3 rounded backdrop-blur-lg border border-dashed border-red-500/30 text-red-500 z-30">
-    <h2 class="text-sm">Peringatan!</h2>
-    <p class="text-[12px]">
-      Jika telah dipanggil melalui telpon/WA lebih dari 3x maka akan diskip ke player selanjutnya!
-    </p>
-    <p class="text-[12px] mt-4">
-      Player yang sudah di lokasi akan diprioritaskan.
-    </p>
-  </div>
+    <div
+        class="bg-red-100 p-3 rounded-xl backdrop-blur-lg border border-red-500/30 text-red-500 z-30"
+    >
+        <div class="flex">
+            <div class="w-5">
+                <Icon name="ep:warn-triangle-filled" />
+            </div>
+            <div class="flex-1">
+                <h2 class="text-sm font-bold">Peringatan!</h2>
+                <div class="text-[11px] gap-1 flex items-start">
+                    <Icon name="icon-park-outline:dot" class="w-3 h-3 mt-1" />
+                    <div class="flex-1">
+                        Batas panggilan adalah <b class="underline">Tiga Kali</b> melalui Telpon/WA.
+                    </div>
+                </div>
+                <div class="text-[11px] mt-2 gap-1 flex items-start">
+                   <Icon name="icon-park-outline:dot" class="w-3 h-3 mt-1" />
+                    <div class="flex-1">
+                       Akan diprioritaskan antrian yang sudah di lokasi.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </template>
