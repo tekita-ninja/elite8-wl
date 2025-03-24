@@ -21,7 +21,7 @@ async function handleChangePage(e: number) {
 </script>
 
 <template>
-    <div class="py-6">
+    <div class="pt-6 pb-10 md:pb-12">
         <div class="flex items-center">
             <NuxtLink
                 class="h-8 w-8 shrink-0 rounded-md bg-[#F4E3BE] flex items-center justify-center"
