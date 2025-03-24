@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div class="pb-10 md:pb-12">
         <Header />
         <div class="space-y-4 mt-6">
             <a

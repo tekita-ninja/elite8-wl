@@ -5,7 +5,7 @@ await controller.getBanner();
 <template>
     <div
         v-if="controller.banners.length > 0"
-        class="mt-4 max-w-[230px] md:max-w-max mx-auto overflow-hidden aspect-auto backdrop-blur rounded-xl shadow shadow-[#CBAA61] bg-gradient-to-tr from-[#CBAA61]/20 via-slate-950/90 to-[#CBAA61]/50 text-slate-100"
+        class="mt-4 overflow-hidden aspect-auto backdrop-blur rounded-xl shadow shadow-[#CBAA61] bg-gradient-to-tr from-[#CBAA61]/20 via-slate-950/90 to-[#CBAA61]/50 text-slate-100"
     >
         <Swiper
             class="h-full w-full"
