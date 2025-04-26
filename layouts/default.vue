@@ -7,9 +7,21 @@
                 <slot />
             </main>
             <footer
-                class="fixed backdrop-blur left-0 right-0  text-[#382909]/50 bottom-0 flex py-2 justify-center items-center text-center w-full text-sm"
+                class="fixed backdrop-blur left-0 right-0 text-[#FFF]/80 bottom-0 flex py-2 justify-center items-center text-center w-full text-sm"
             >
-                Powered by Tekita.tech
+                <a
+                    href="https://tekita.tech"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="flex items-center gap-2"
+                >
+                    <p class="text-sm">Powered by</p>
+                    <img
+                        class="w-14 mx-auto"
+                        src="/logo/main.png"
+                        alt="Tekita tech logo"
+                    />
+                </a>
             </footer>
         </div>
     </div>

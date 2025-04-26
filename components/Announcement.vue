@@ -1,7 +1,7 @@
 <script setup lang="ts"></script>
 <template>
     <div
-        class="bg-red-100 p-3 rounded-xl backdrop-blur-lg border border-red-500/30 text-red-500 z-30"
+        class="bg-red-50 p-3 rounded-xl backdrop-blur-lg border border-red-200/30 text-red-500 z-30"
     >
         <div class="flex">
             <div class="w-5">
