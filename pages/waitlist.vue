@@ -49,8 +49,19 @@ async function handleChangePage(e: number) {
                 Daftar antrian saat ini
             </p>
         </div>
-        <div class="mb-2 pb-1">
+        <div class="mb-4 pb-1">
             <Announcement />
+        </div>
+        <div>
+            <a
+                class="flex items-center justify-center gap-2 h-10 rounded-lg text-[#B99954] w-full bg-[#140E01]"
+                href="https://api.whatsapp.com/send?phone=6287869129888&text=Hallo%20Kak%20,%20Saya%20mau%20booking%20dong%20atas%20nama:%20"
+                target="_blank"
+                rel="noopener noreferrer"
+            >
+                <Icon name="ph:list-plus-bold" />
+                <p>Make a Reservation</p>
+            </a>
         </div>
         <div
             class="p-3 md:p-6 my-5 rounded-xl bg-gradient-to-tr from-[#C7A457] via-[#382909]/20 to-[#382909]/80 text-slate-100"

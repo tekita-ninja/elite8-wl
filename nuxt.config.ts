@@ -71,6 +71,31 @@ export default defineNuxtConfig({
       ],
     },
   },
-  ssr:false,
-  modules: ['@nuxtjs/tailwindcss', '@pinia/nuxt', '@nuxt/icon','nuxt-swiper']
+  ssr: false,
+  css: ['@/assets/css/main.css'],
+  modules: [
+    '@nuxtjs/tailwindcss',
+    '@pinia/nuxt',
+    '@nuxt/icon',
+    'nuxt-swiper',
+    "@nuxtjs/google-fonts"
+  ],
+  googleFonts: {
+    families: {
+      Roboto: true,
+      'Open+Sans': [300, 400, 600],
+      Poppins: {
+        wght: [400, 500, 700],
+        ital: [100]
+      },
+      "Roboto Condensed": {
+        wght: [400, 500, 700],
+        ital: [100]
+      },
+    },
+    display: 'swap',
+    preconnect: true,
+    // download: true,
+    inject: true
+  }
 })
