@@ -5,7 +5,7 @@ await controller.getBanner();
 <template>
     <div
         v-if="controller.banners.length > 0"
-        class="mt-4 max-w-[261px] md:max-w-sm mx-auto overflow-hidden aspect-auto backdrop-blur rounded-xl shadow shadow-[#CBAA61] bg-gradient-to-tr from-[#CBAA61]/20 via-slate-950/90 to-[#CBAA61]/50 text-slate-100"
+        class="mt-4 h-full w-[261px] md:max-w-sm mx-auto overflow-hidden aspect-[12/15] backdrop-blur rounded-xl shadow shadow-[#CBAA61] bg-gradient-to-tr from-[#CBAA61]/20 via-slate-950/90 to-[#CBAA61]/50 text-slate-100"
     >
         <Swiper
             class="h-full w-full"
@@ -29,7 +29,7 @@ await controller.getBanner();
                 :key="slide.id"
             >
                 <img
-                    class="h-full w-full object-cover"
+                    class="w-[261px] aspect-[12/15] object-cover"
                     :src="toLinkAsset(slide.filename)"
                     alt="image"
                 />
