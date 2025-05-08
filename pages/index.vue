@@ -26,11 +26,12 @@
                     </p>
                 </div>
             </a>
+            
             <NuxtLink
                 href="/waitlist"
                 class="relative p-[12px] flex rounded-xl w-full justify-start text-start bg-gradient-to-tr from-[#F4E3BE]/50 to-[#140E01]/50 shadow-lg shadow-[#140E01]/10"
             >
-                <div class="absolute right-0 top-0 bottom-0">
+                <div class="absolute w-44 right-0 top-0 bottom-0">
                     <img
                         class="w-full h-full object-cover object-left"
                         src="/ills/ill-wl.png"
