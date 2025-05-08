@@ -11,7 +11,7 @@
                 <div class="absolute w-36 h-full right-0 top-0 bottom-0">
                     <img
                         class="w-full h-full object-cover object-left"
-                        src="/ills/ill-menu.svg"
+                        src="/ills/ill-menu.png"
                         alt=""
                     />
                 </div>
@@ -33,7 +33,7 @@
                 <div class="absolute right-0 top-0 bottom-0">
                     <img
                         class="w-full h-full object-cover object-left"
-                        src="/ills/ill-wl.svg"
+                        src="/ills/ill-wl.png"
                         alt=""
                     />
                 </div>
